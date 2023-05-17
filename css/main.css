@@ -1,0 +1,111 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.page-container .page-content {
+    display: flex;
+    flex-direction: row;
+    background: url(../assets/epi_page_background.png) no-repeat;
+    height: 80%;
+    background-size: cover;
+    position: relative;
+    padding: 3% 0px;
+}
+
+.page-container .page-content .left-content {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 5%;
+}
+
+.page-container .page-content .left-content .top-logo {
+    background: url(../assets/epi_page_logo_top_left.png) no-repeat;
+    background-size: contain;
+    height: 35%;
+    width: 65%;
+}
+
+.page-container .page-content .left-content .main-text {
+    background: url(../assets/epi_page_main_text.png) no-repeat center;
+    background-size: contain;
+    height: 55%;
+}
+
+.page-container .page-content .right-content {
+    height: inherit;
+    width: 100%;
+    background: url(../assets/epi_page_product_image.png) no-repeat center;
+    background-size: contain;
+}
+
+.page-container .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url(../assets/gradient_footer_for_epi_page.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 20%;
+}
+
+.page-container .page-footer .left-content {
+
+    background: url(../assets/epi_page_coming_soon_text.png) no-repeat center;
+    background-size: contain;
+    width: 30%;
+}
+
+.page-container .page-footer .right-content {
+
+    background: url(../assets/epi_page_more_info_text.png) no-repeat center;
+    background-size: contain;
+    width: 30%;
+    margin-right: 5%;
+}
+
+
+@media only screen and (max-device-width: 900px) {
+    .page-container .page-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .page-container .page-content .left-content,
+    .page-container .page-content .right-content {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .page-container .page-content .left-content .top-logo {
+        background-position: center;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-container .page-content .left-content .main-text {
+        height: 50%;
+        width: 55%;
+        margin-left: 13%;
+    }
+
+    .page-container .page-content .right-content {
+        margin: 5% 0px;
+    }
+
+}

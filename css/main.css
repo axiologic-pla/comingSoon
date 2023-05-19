@@ -46,7 +46,7 @@ body {
 
 .page-container .page-content .right-content {
     height: inherit;
-    width: 100%;
+    width: 60%;
     background: url(../assets/epi_page_product_image.png) no-repeat center;
     background-size: contain;
 }
@@ -77,7 +77,7 @@ body {
 }
 
 
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-device-width: 500px) {
     .page-container .page-content {
         flex-direction: column;
         align-items: center;
@@ -108,4 +108,11 @@ body {
         margin: 5% 0px;
     }
 
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        min-width: 100%;
+        margin: auto;
+    }
 }

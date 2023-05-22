@@ -1,2 +1,2 @@
-# commingSoon
-comming soon static page
+# comingSoon
+coming soon static page
